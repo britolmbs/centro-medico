@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
@@ -20,6 +21,7 @@ const App = () => {
       <CssBaseline />
  <Router>
       <Navbar />
+      <Footer />
     </Router>
     </ThemeProvider>
    
