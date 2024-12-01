@@ -40,7 +40,7 @@ const Navbar = () => {
                 </Toolbar>
                 </AppBar>
                 <Drawer anchor='right' open={drawerOpen} onClose={toggleDrawer(false)}>
-                <List variant='plain' >
+                <List component='nav' variant='plain' >
                     <ListItem component={Link} to='/' onClick={toggleDrawer(false)}>
                     <ListItemText primary='Inicio' />
                     </ListItem> 
