@@ -7,6 +7,7 @@ import Carrossel from './components/Carrossel';
 import "swiper/css";
 import "swiper/css/navigation";
 import { register } from "swiper/element/bundle";
+import Product from './components/Product';
 register();
 const theme = createTheme({
   palette: {
@@ -26,6 +27,7 @@ const App = () => {
  <Router>
       <Navbar />
       <Carrossel />
+      <Product />
       <Footer />
     </Router>
     </ThemeProvider>
