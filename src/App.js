@@ -1,13 +1,16 @@
 import React from 'react';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
-import Carrossel from './components/Carrossel';
 import "swiper/css";
 import "swiper/css/navigation";
 import { register } from "swiper/element/bundle";
-import Product from './components/Product';
+
+import Home from './pages/Home';
+import About from './pages/About';
+
+
 register();
 const theme = createTheme({
   palette: {
@@ -26,9 +29,11 @@ const App = () => {
       <CssBaseline />
  <Router>
       <Navbar />
-      <Carrossel />
-      <Product />
-      <Footer />
+      <Routes>
+        <Route path='/' element={<Home />} />
+      <Route path="/About" element={<About />} />
+    </Routes>
+    <Footer />
     </Router>
     </ThemeProvider>
    
