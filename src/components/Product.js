@@ -1,10 +1,10 @@
 import React from "react";
-import { Grid, Box, Card, CardContent, CardMedia, Typography } from "@mui/material";
+import { Grid, Box, Card, CardContent, CardMedia, Typography, Button } from "@mui/material";
 
 
 const produto = [
     {
-        name: 'Clinico Geral',
+        name: 'Consultas Médicas',
         image: '',
         description: '',
 
@@ -70,6 +70,11 @@ const Product = () => {
                         <Typography variant="body2" color="text.secondary">
                             {produto.description}
                         </Typography>
+                        <Button 
+                        variant="contained"
+                        color="secondary"
+                        target="_blank"
+                        sx={{ mt: 2 }}>Saiba Mais</Button>
                     </CardContent>
                 </Card>
             </Grid>
