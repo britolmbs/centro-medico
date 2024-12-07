@@ -1,4 +1,5 @@
-import { Avatar, Container, Grid, Grid2, Typography } from "@mui/material";
+import { Image } from "@mui/icons-material";
+import { Avatar, Card, CardMedia, Container, Grid, Grid2, Typography } from "@mui/material";
 import React from "react";
 
 
@@ -18,24 +19,6 @@ Nunc hendrerit sit amet lorem in pretium. Aliquam imperdiet id arcu eu congue. A
 Sed interdum ultrices sem, malesuada hendrerit elit interdum eu. Vestibulum ultrices augue et sapien ultrices, ut suscipit ipsum facilisis. Curabitur molestie molestie est ac dapibus. Etiam id dolor dui. Sed ornare luctus ex, quis feugiat sapien mattis in. Sed placerat justo quis.
             </Typography>
         </Grid>
-     <Container>
-        <Grid item xs={12} sm={8}>
-            <Typography variant="h4" align="center"
-            gutterBottom>
-                Como começamos
-            </Typography>
-            <Grid container spacing={4} alignItems="center">
-                <Grid item xs={12} sm={6} display="flex" justifyContent="center">
-                    <Avatar alt="centro"
-                    src=""
-                    sx={{ width: 200, height: 200,}} />
-                    <Grid item xs={12} sm={8}>
-                    <Typography variant="body1">adas</Typography>
-                </Grid>
-            </Grid>
-            </Grid>
-            </Grid>
-            </Container>
        </Container>
     );
 };
