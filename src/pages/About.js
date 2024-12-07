@@ -3,6 +3,10 @@ import { Avatar, Card, CardMedia, Container, Grid, Grid2, Typography } from "@mu
 import React from "react";
 
 
+const data = [
+    {id: '1', imagecentro: ''},
+]
+
 const About = () => {
     return (
        <Container id="about" sx={{ py: 4 }}>
@@ -19,7 +23,9 @@ Nunc hendrerit sit amet lorem in pretium. Aliquam imperdiet id arcu eu congue. A
 Sed interdum ultrices sem, malesuada hendrerit elit interdum eu. Vestibulum ultrices augue et sapien ultrices, ut suscipit ipsum facilisis. Curabitur molestie molestie est ac dapibus. Etiam id dolor dui. Sed ornare luctus ex, quis feugiat sapien mattis in. Sed placerat justo quis.
             </Typography>
         </Grid>
-       </Container>
+</Container>
+       
+       
     );
 };
 
