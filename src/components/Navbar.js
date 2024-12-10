@@ -29,7 +29,7 @@ const Navbar = () => {
                     <NavbarButton component={NavLink} to="/">Inicio</NavbarButton>
                     <NavbarButton component={NavLink} to="/About">Sobre Nós</NavbarButton>
                     <NavbarButton component={Link} to="/products">Nossos serviços</NavbarButton>
-                    <NavbarButton component={Link} to="/contact">Entre em contato</NavbarButton>
+                    <NavbarButton component={Link} to="/Contact">Entre em contato</NavbarButton>
                     <NavbarButton component={Link} to="/endereco">Onde Estamos</NavbarButton>
                     <IconButton href='https://www.instagram.com' target='_blank' color='secondary'><Instagram /></IconButton>
                     <IconButton href='https://www.facebook.com' target='_blank' color='secondary'><Facebook /></IconButton>
@@ -50,7 +50,7 @@ const Navbar = () => {
                     <ListItem component={Link} to='/products' onClick={toggleDrawer(false)}>
                     <ListItemText primary='Nossos serviços' />
                     </ListItem>
-                    <ListItem component={Link} to='/contact' onClick={toggleDrawer(false)}>
+                    <ListItem component={Link} to='/Contact' onClick={toggleDrawer(false)}>
                     <ListItemText primary='Entre em contato' />
                     </ListItem>
                     <ListItem component={Link} to='/endereco' onClick={toggleDrawer(false)}>

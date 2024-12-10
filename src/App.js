@@ -9,6 +9,7 @@ import { register } from "swiper/element/bundle";
 
 import Home from './pages/Home';
 import About from './pages/About';
+import Contact from './pages/Contact';
 
 
 register();
@@ -32,6 +33,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
       <Route path="/About" element={<About />} />
+      <Route path="/Contact" element={<Contact />} />
     </Routes>
     <Footer />
     </Router>
