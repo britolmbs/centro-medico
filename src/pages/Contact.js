@@ -1,8 +1,15 @@
 import { Send } from "@mui/icons-material";
-import { Box, Button, TextField } from "@mui/material";
-import React from "react";
+import { Box, Button, TextField, Typography } from "@mui/material";
+import React, { Component } from "react";
 const Contact = () => {
     return (
+<>
+        <div>
+       <Typography variant="h3" display="flex" align="center" justifyContent="center" gutterBottom>
+        Entre em contato </Typography>
+    
+        </div>
+
        <Box
        component="form"
        sx={{ display: "flex", alignItems: "center", justifyContent: "center",'& .MuiTextField-root': { m: 1, windth: '25ch'}}}
@@ -51,6 +58,7 @@ const Contact = () => {
            
         </div>
        </Box>
+       </>
     )
 }
 
