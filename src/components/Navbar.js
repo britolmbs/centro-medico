@@ -28,10 +28,10 @@ const Navbar = () => {
                     <Typography variant='h6' sx={{ flexGrow: 1,}}>Centro Médico</Typography>
                     <NavbarButton component={NavLink} to="/">Inicio</NavbarButton>
                     <NavbarButton component={NavLink} to="/About">Sobre Nós</NavbarButton>
-                    <NavbarButton component={Link} to="/products">Nossos serviços</NavbarButton>
+                    <NavbarButton component={Link} to="/Products">Nossos serviços</NavbarButton>
                     <NavbarButton component={Link} to="/Contact">Entre em contato</NavbarButton>
                     <NavbarButton component={Link} to="/endereco">Onde Estamos</NavbarButton>
-                    <IconButton href='https://www.instagram.com' target='_blank' color='secondary'><Instagram /></IconButton>
+                    <IconButton href='https://www.instagram.com/cmjoaoxxiii' target='_blank' color='secondary'><Instagram /></IconButton>
                     <IconButton href='https://www.facebook.com' target='_blank' color='secondary'><Facebook /></IconButton>
                     <IconButton color='inherit' edge='end' sx={{ display: { xs: 'block', sm: 'none'} }}
                     onClick={toggleDrawer(true)}>
