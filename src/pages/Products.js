@@ -9,9 +9,38 @@ const Products =  () =>{
             <ListItem disablePadding>
                 <ListItemButton component="a" href="#">
                 <ListItemText primary="Clinica Medica" />
-
+             </ListItemButton>
+             </ListItem>
+             <ListItem disablePadding>
+             <ListItemButton component="a" href="#">
+                <ListItemText primary="Fisoterapia" />
+             </ListItemButton>
+            </ListItem>
+            <ListItem disablePadding>
+                <ListItemButton component="a" href="#">
+                <ListItemText primary="Exames Complementares" />
                 </ListItemButton>
             </ListItem>
+            <ListItem disablePadding>
+                <ListItemButton component="a" href="#">
+                <ListItemText primary="Psicologia" />
+                </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton component="a" href="#">
+                        <ListItemText primary="Dentista" />
+                        </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton component="a" href="#">
+                        <ListItemText primary="Tratamentos Estéticos" />
+                    </ListItemButton>
+                </ListItem>
+                <ListItem disablePadding>
+                    <ListItemButton component="a" href="#">
+                        <ListItemText primary="Medicina do Trabalho" />
+                    </ListItemButton>
+                </ListItem>
         </List>
         
         </nav>
