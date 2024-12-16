@@ -30,7 +30,7 @@ const Navbar = () => {
                     <NavbarButton component={NavLink} to="/About">Sobre Nós</NavbarButton>
                     <NavbarButton component={Link} to="/Products">Nossos serviços</NavbarButton>
                     <NavbarButton component={Link} to="/Contact">Entre em contato</NavbarButton>
-                    <NavbarButton component={Link} to="/endereco">Onde Estamos</NavbarButton>
+                    <NavbarButton component={Link} to="/Endereco">Onde Estamos</NavbarButton>
                     <IconButton href='https://www.instagram.com/cmjoaoxxiii' target='_blank' color='secondary'><Instagram /></IconButton>
                     <IconButton href='https://www.facebook.com' target='_blank' color='secondary'><Facebook /></IconButton>
                     <IconButton color='inherit' edge='end' sx={{ display: { xs: 'block', sm: 'none'} }}

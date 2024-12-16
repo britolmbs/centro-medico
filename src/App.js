@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Products from './pages/Products';
+import Endereco from './pages/Endereco';
 
 
 register();
@@ -36,6 +37,7 @@ const App = () => {
       <Route path="/About" element={<About />} />
       <Route path="/Contact" element={<Contact />} />
       <Route path="/Products" element={<Products />} />
+      <Route path="/Endereco" element={<Endereco />} />
     </Routes>
     <Footer />
     </Router>
