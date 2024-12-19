@@ -1,7 +1,31 @@
 import { Send } from "@mui/icons-material";
 import { Box, Button, TextField, Typography } from "@mui/material";
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 const Contact = () => {
+    const [form, setForm] = useState({
+        nome: '',
+        email: '',
+        telefone: '',
+        mensagem: ''
+    });
+    const handleChange = (e) => {
+        const { id, value } = e.target;
+        setForm((prevData) => ({
+            ...prevData,
+            [id]: value,
+        }));
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setForm({
+            nome: '',
+            email: '',
+            telefone: '',
+            mensagem: ''
+        });
+    };
+
     return (
 <>
         <div>
@@ -14,7 +38,8 @@ const Contact = () => {
        component="form"
        sx={{ display: "flex", alignItems: "center", justifyContent: "center",'& .MuiTextField-root': { m: 1, windth: '25ch'}}}
        noValidate
-       autoComplete="off" >
+       autoComplete="off"
+       onSubmit={handleSubmit} >
 
         <div>
             <TextField
@@ -23,6 +48,8 @@ const Contact = () => {
             label="Nome Completo"
             size="small"
             fullWidth
+            value={form.nome}
+            onChange={handleChange}
             />
 
             <TextField
@@ -32,14 +59,20 @@ const Contact = () => {
             type="email" 
             size="small"
             fullWidth
+            value={form.email}
+            onChange={handleChange}
             />
+
             <TextField
             required
             id="telefone"
             label="Telefone"
             type="tel"
             size="small"
-            fullWidth />
+            fullWidth
+            value={form.telefone}
+            onChange={handleChange} />
+
             <TextField
             required
             id="mensagem"
@@ -48,7 +81,9 @@ const Contact = () => {
             multiline
             rows={4}
             size="small"
-            fullWidth />
+            fullWidth
+            value={form.mensagem}
+            onChange={handleChange} />
 
             <Button variant="contained"
             color="secondary"
