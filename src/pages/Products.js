@@ -1,55 +1,56 @@
 import  Box  from "@mui/material/Box";
-import { List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from "@mui/material";
+import { Card, CardContent, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography } from "@mui/material";
+import { useState } from "react";
 
 const Products =  () =>{
+    const [selecionarServico, setSelecionarServico] = useState(null);
+
+    const handleListItemClick = (servico) => {
+        setSelecionarServico(servico === selecionarServico ? null : servico);
+    };
+
+    const servicos = [
+        "Clinica Médica",
+        "Fisoterapia",
+        "Exames Complementares",
+        "Psicologia",
+        "Dentista",
+        "Tratamentos Estéticos",
+        "Medicina do Trabalho",
+    ];
+
     return (
        <Box sx={{ Width: '100%', maxWidth: 360, bgcolor: 'background.paper'}}> 
        <nav aria-label="main mailbox folders">
         <List>
-            <ListItem disablePadding>
-                <ListItemButton component="a" href="#">
-                <ListItemText primary="Clinica Medica" />
-             </ListItemButton>
-             </ListItem>
-             <ListItem disablePadding>
-             <ListItemButton component="a" href="#">
-                <ListItemText primary="Fisoterapia" />
-             </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding>
-                <ListItemButton component="a" href="#">
-                <ListItemText primary="Exames Complementares" />
-                </ListItemButton>
-            </ListItem>
-            <ListItem disablePadding>
-                <ListItemButton component="a" href="#">
-                <ListItemText primary="Psicologia" />
-                </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#">
-                        <ListItemText primary="Dentista" />
-                        </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#">
-                        <ListItemText primary="Tratamentos Estéticos" />
+            {servicos.map((servico, index) => (
+                <ListItem key={index} disablePadding>
+                    <ListItemButton onClick={() => handleListItemClick(servico)}>
+                        <ListItemText primary={servico} />
                     </ListItemButton>
                 </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#">
-                        <ListItemText primary="Medicina do Trabalho" />
-                    </ListItemButton>
-                </ListItem>
+            ))}
         </List>
-        
         </nav>
+
+        {selecionarServico && (
+            <Card sx={{ marginTop: 2}}>
+                <CardContent>
+                    <Typography variant="h6" component="div">
+                        {selecionarServico}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                        {selecionarServico}
+                    </Typography>
+                </CardContent>
+            </Card>
+        )}
        
        
        </Box>
       
-    )
-}
+    );
+};
 
 
 
