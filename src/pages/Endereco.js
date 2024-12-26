@@ -1,7 +1,24 @@
 import React from "react";
-import { Box, Card, CardMedia } from "@mui/material";
+import { Box, Button, Card, CardMedia } from "@mui/material";
+
+
 
 const Endereco = () => {
+    const handleGetDiretions = () => {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition((position) => {
+                const { latitude, longitude } = position.coords;
+                const googleMapsUrl = `https://www.goolge.com/maps/dir/${latitude},${longitude}/-22.90883356337729,-43.698861430489764`;
+                window.open(googleMapsUrl, "_blank");
+            }, (error) => {
+                console.error("Erro ao Obter Localização: ", error);
+                alert("Não foi possivel obter sua localização. Por favor, verificar as permissõe.");
+            });
+        }else {
+            alert("Geolocalização não suportada pelo seu navegador.");
+        }
+        };
+    
     return(
         <Card sx={{ maxWidth: 600, margin: 'auto', boxShadow: 3, borderRadius: 2 }}>
             <Box sx={{ position: 'relative', paddingTop: '56.25%',}}>
@@ -17,6 +34,9 @@ const Endereco = () => {
                 ></iframe>
 
             </Box>
+            <Button variant="contained" color="primary" onClick={handleGetDiretions} sx={{ marginTop: 2}}>
+                Obter Direções
+            </Button>
 
 
         </Card>
