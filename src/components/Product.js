@@ -1,13 +1,16 @@
 import React from "react";
 import { Grid, Box, Card, CardContent, CardMedia, Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
+import medico from '../assets/medico.png';
+import fisioterapia from '../assets/fisioterapia.png';
+import exames from '../assets/exames.png';
 
 
 const produto = [
     {
         id: 1,
         name: 'Consultas Médicas',
-        image: '',
+        image: {medico},
         description: 'No nosso centro médico, oferecemos consultas em diversas especialidades: ortopedia, pediatria, otorrinolaringologia, alergologia, cardiologia, ginecologia, pneumologia, clínica geral, endocrinologia e dermatologia. Cuide da sua saúde com profissionais qualificados!',
 
     },
@@ -15,14 +18,14 @@ const produto = [
     {
         id: 2,
         name: 'Fisoterapia',
-        image: '',
+        image: {fisioterapia},
         description: 'No nosso centro médico, a fisioterapia é focada na melhora da postura, flexibilidade, tratamento de dores, coordenação motora e qualidade de vida, proporcionando relaxamento e bem-estar.',
 
     },
     {
         id: 3,
         name: 'Exames Complementares',
-        image: '',
+        image: {exames},
         description: 'No nosso centro médico, oferecemos exames laboratoriais como teste de gravidez, endoscopia, teste alérgico, além de procedimentos como cirurgia de fimose, vasectomia e chip hormonal. Realizamos também ultrassonografias, ecocardiogramas, USG Doppler das pernas, eletrocardiogramas e monitoramento de pressão. Cuide da sua saúde com agilidade e precisão!',
 
     },
