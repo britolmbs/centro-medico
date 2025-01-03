@@ -10,7 +10,7 @@ const produto = [
     {
         id: 1,
         name: 'Consultas Médicas',
-        image: {medico},
+        image: medico,
         description: 'No nosso centro médico, oferecemos consultas em diversas especialidades: ortopedia, pediatria, otorrinolaringologia, alergologia, cardiologia, ginecologia, pneumologia, clínica geral, endocrinologia e dermatologia. Cuide da sua saúde com profissionais qualificados!',
 
     },
@@ -18,14 +18,14 @@ const produto = [
     {
         id: 2,
         name: 'Fisoterapia',
-        image: {fisioterapia},
+        image: fisioterapia,
         description: 'No nosso centro médico, a fisioterapia é focada na melhora da postura, flexibilidade, tratamento de dores, coordenação motora e qualidade de vida, proporcionando relaxamento e bem-estar.',
 
     },
     {
         id: 3,
         name: 'Exames Complementares',
-        image: {exames},
+        image: exames,
         description: 'No nosso centro médico, oferecemos exames laboratoriais como teste de gravidez, endoscopia, teste alérgico, além de procedimentos como cirurgia de fimose, vasectomia e chip hormonal. Realizamos também ultrassonografias, ecocardiogramas, USG Doppler das pernas, eletrocardiogramas e monitoramento de pressão. Cuide da sua saúde com agilidade e precisão!',
 
     },
@@ -69,7 +69,7 @@ const Product = () => {
                     <CardMedia
                     component="img"
                     height="250"
-                    image={produto.image}
+                    image={produto.image || 'default-image-path.png'}
                     alt={produto.name}
                     sx={{ objectFit: 'contain' }}
                     />
@@ -85,7 +85,7 @@ const Product = () => {
                         variant="contained"
                         color="secondary"
                         target="_blank"
-                        content={Link}
+                        component={Link}
                         to={`/products/${produto.id}`}
                         sx={{ mt: 2 }}>Saiba Mais</Button>
                     </CardContent>
