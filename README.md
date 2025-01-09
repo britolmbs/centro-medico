@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Centro Médico João XXIII - Website 🌐  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é o desenvolvimento do site oficial do **Centro Médico João XXIII**, criado para oferecer aos pacientes uma experiência moderna, acessível e eficiente, conectando-os aos serviços e informações da clínica.  
 
-## Available Scripts
+## ✨ Funcionalidades  
 
-In the project directory, you can run:
+- **Página de Serviços Prestados:** Exibição detalhada das especialidades e tratamentos oferecidos.  
+- **Formulário de Contato:** Facilita a comunicação entre os pacientes e a clínica.  
+- **Localização Interativa:** Integração com um mapa interativo para ajudar os usuários a encontrarem a clínica com facilidade.  
 
-### `npm start`
+## 💻 Tecnologias Utilizadas  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React.js**  
+- **React DOM**  
+- **Material UI:** Para criação de uma interface visual moderna e responsiva.  
+- **Swiper:** Para implementação de carrosséis interativos e responsivos.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Como Executar o Projeto  
 
-### `npm test`
+1. Clone o repositório:  
+   ```bash  
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git  
+   ```  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Acesse a pasta do projeto:  
+   ```bash  
+   cd nome-do-repositorio  
+   ```  
 
-### `npm run build`
+3. Instale as dependências:  
+   ```bash  
+   npm install  
+   ```  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Inicie o servidor de desenvolvimento:  
+   ```bash  
+   npm start  
+   ```  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. Acesse no navegador:  
+   ```  
+   http://localhost:3000  
+   ```  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📍 Progresso  
 
-### `npm run eject`
+O projeto está em constante evolução, com melhorias e novas funcionalidades sendo implementadas nas próximas fases.  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Melhorias Futuras  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Área de login para pacientes e médicos.  
+- Sistema de agendamento de consultas online.  
+- Blog para publicação de conteúdos médicos e educativos.  
+- Otimizações de acessibilidade e SEO.  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 👨‍💻 Desenvolvedor  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Este projeto foi desenvolvido por [Seu Nome] com o objetivo de contribuir para o crescimento digital do Centro Médico João XXIII.  
 
-## Learn More
+## 🔗 Acompanhe o Projeto  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Repositório no GitHub: [https://github.com/seu-usuario/nome-do-repositorio](https://github.com/seu-usuario/nome-do-repositorio)  
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---  
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Sinta-se à vontade para contribuir com sugestões, melhorias ou feedbacks! 😊
