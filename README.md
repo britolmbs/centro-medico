@@ -19,7 +19,7 @@ Este projeto é o desenvolvimento do site oficial do **Centro Médico João XXII
 
 1. Clone o repositório:  
    ```bash  
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git  
+   git clone https://github.com/britolmbs/centro-medico.git  
    ```  
 
 2. Acesse a pasta do projeto:  
@@ -55,11 +55,11 @@ O projeto está em constante evolução, com melhorias e novas funcionalidades s
 
 ## 👨‍💻 Desenvolvedor  
 
-Este projeto foi desenvolvido por [Seu Nome] com o objetivo de contribuir para o crescimento digital do Centro Médico João XXIII.  
+Este projeto foi desenvolvido por Lucas Brito com o objetivo de contribuir para o crescimento digital do Centro Médico João XXIII.  
 
 ## 🔗 Acompanhe o Projeto  
 
-- Repositório no GitHub: [https://github.com/seu-usuario/nome-do-repositorio](https://github.com/seu-usuario/nome-do-repositorio)  
+- Repositório no GitHub: [https://github.com/britolmbs/centro-medico](https://github.com/britolmbs/centro-medico)  
 
 ---  
 
